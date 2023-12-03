@@ -2,18 +2,38 @@
 <html>
     <head>
         <title>Contact</title>
-            <!-- Required meta tags -->
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <!-- Bootstrap CSS -->
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-            <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-            <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-            <!-- JavaScript: Bootstrap Bundle with Popper -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-            <!-- eigen geschreven css voor jouw html-bestand -->
+        <head>
+          <!-- Required meta tags -->
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>oefening</title>
+          <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        
+          <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+          <!-- JavaScript: Bootstrap Bundle with Popper -->
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+          <!-- eigen geschreven css voor jouw html-bestand -->
+        <link rel="stylesheet" href="css/style.css">
+        
+          <!-- LEAFLET -->
+          <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+          <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+        
+          <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
+        <link rel="stylesheet" href="mapStyle.css">
+          <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+          <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin=""></script>
+        
+          <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
+        <script src="mapScript.js" defer></script>
     </head>
     <body style="background-color: black;">
       <nav class="navbar navbar-expand-lg navbar-light bg-black">
@@ -51,3 +71,47 @@
           </div>
       </nav>
       <hr style="color: white;">
+      <p style="color: white;" class="text-center">Op deze pagina vind u de gegevens terug van de ontwerper/bedenkers van de site voor als u meer vragen hebt of feedback wilt achterlaten.</p>
+      <div class="container text-center pt-3 pb-3">
+        <div class="row">
+          <div class="col">
+            <h2 style="color: white;"><u>Admin</u></h2>
+            <p style="color: white;">Jeff De Ridder</p>
+            <a href="https://www.instagram.com/" class="col">
+              <i class="bi bi-instagram fs-5" style="color: white;"></i>
+            </a>
+            <a href="https://www.facebook.com/" class="col">
+              <i class="bi bi-facebook fs-5" style="color: white;"></i>
+            </a>
+            <a href="https://twitter.com/" class="col">
+              <i class="bi bi-twitter fs-5" style="color: white;"></i>
+            </a>
+            <div>
+              <a href="mailto:s148068@ap.be">s148068@ap.be</a>
+            </div>
+            <p style="color: white;">+32 477 54 60 62</p>
+          </div>
+          <div class="col">
+            <h2 style="color: white;"><u>Webdisigner</u></h2>
+            <p style="color: white;">Joske Vermeulen</p>
+            <a href="https://www.instagram.com/" class="col">
+              <i class="bi bi-instagram fs-5" style="color: white;"></i>
+            </a>
+            <a href="https://www.facebook.com/" class="col">
+              <i class="bi bi-facebook fs-5" style="color: white;"></i>
+            </a>
+            <a href="https://twitter.com/" class="col">
+              <i class="bi bi-twitter fs-5" style="color: white;"></i>
+            </a>
+            <div>
+              <a href="mailto:Joske.vermeulen@ap.be">Joske.vermeulen@ap.be</a>
+            </div>
+            <p style="color: white;">+32 477 81 65 27</p>
+          </div>
+        </div>
+      </div>
+      <section id="map" class="row">
+        <div id="apMap" class="col-12 mb-3 text-center"></div>
+      </section>
+    </body>  
+</html>
