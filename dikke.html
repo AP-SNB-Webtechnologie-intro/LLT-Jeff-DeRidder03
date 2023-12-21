@@ -14,6 +14,22 @@
             <!-- JavaScript: Bootstrap Bundle with Popper -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
             <!-- eigen geschreven css voor jouw html-bestand -->
+
+                                             <!-- LEAFLET -->
+          <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+          <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+        
+          <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
+          <link rel="stylesheet" href="/css/mapStyle.css">
+          <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+          <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin=""></script>
+  
+          <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
+          <script src="/js/mapScriptLimburg.js" defer></script>
     </head>
 
     <body style="background-color: black;">
@@ -85,9 +101,22 @@
         Agounad groeide op in Lummen en Maasmechelen als jongste broertje van vijf broers en zussen. Zowel zijn vader als grootvader waren mijnwerkers. Als kind kwam Agounad in aanraking met rapmuziek door cd’s die hij van broers vond. Vanaf het moment dat hij op latere leeftijd kennis nam van YouTube, luisterde hij met name naar Nederlandstalige rapmuziek. Naast het luisteren naar muziek, begon Agnouad op jonge leeftijd ook al met het schrijven van poëzie. Op zijn veertiende schreef hij zijn eerste nummer. Na een eerste rapnummer op YouTube te hebben geplaatst, postte hij rapvideo’s op Facebook. In deze amateurtracks rapte hij over jarennegentigbeats heen. Volgend op het eerste succes dat hij aldaar verwierf, stapte hij over naar Instagram. Dat alles deed hij onder de naam Moker, die hij na zijn initiële succes veranderde in Dikke.
         Agounad maakte een tijd lang commerciële muziek om bij te verdienen. Daarna stuurde hij twee demo’s op naar Top Notch Belgium. Met succes: de platenmaatschappij bood hem een contract aan. Het debuutalbum dat hij bij het label uitbracht, 130 Kilo, kwam op nummer één binnen op de Belgische Ultratop. Het album kwam in 2021 uit en werd in datzelfde jaar gevolgd door een nieuw album genaamd Nooduitgang. Op de valreep van 2022 bracht DIKKE een derde album met de titel Beef Met Mezelf, uit.  
         Tot op het moment dat Agnouad voor optredens werd geboekt, werkte hij in kledingzaken om rond te kunnen komen. In 2022 rondde hij de opleiding Logistiek Management, gespecialiseerd in wegvervoer, af met onderscheiding.<br>
-        Hij heeft ook al samengewerkt met grote namen uit de belgische rap scene. onderanderen met:
+        Hij heeft ook al samengewerkt met grote namen uit de belgische rap scene. onderanderen met: 
+        <ul style="color: white;" class="container">
+          <li>Zwangere Guy</li>
+          <li>Freddie Konings</li>
+          <li>Stikstof</li>
+          <li>Ramzi</li>
+          <li>Millson</li>
+        </ul>
       </p>
+
         <br>
+
+        <section id="map" class="row">
+          <section class="p-5" id="Limburgmap" style="height: 400px; margin-bottom: 40px;"></section>
+        </section>
+
         <h2 style="color: white;" class="text-center"><u>Top Nummers</u></h2>
         <p style="color: white;" class="text-center">In deze lijst vind u de populairste nummers van Freddie Konings. als u de nummers wilt ontdekken vind u onderaan deze pagina een kleine afspeellijst die u kunt beluisteren. en natuurlijk ook kunt toevoegen aan je spotify!</p>
       <table class="table" style="color: white;">
@@ -139,17 +168,17 @@
           <p style="color: white;">Hieronder vind kan u wat nummers van hem beluisteren en ook zijn top albums ontedekken. Veel luister plezier!</p>
           <br>
           <article class="row">
-            <section class="col">
+            <section class="col-lg-4 col-md-6">
               <h3 style="color: white;"><u>ontdek hier zijn nummers</u></h3>
               <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO3KAotW?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </section>
-            <section class="col">
+            <section class="col-lg-4 col-md-6">
               <h3 style="color: white;"><u>130 Kilo</u></h3>
               <a href="https://open.spotify.com/album/4yjNKVTosi1fnBDj1k4xlm?si=whcgOsBWQwmhgleLtUm75g">
                 <img src="img/downloaden (4).jpg" alt="130 Kilo">
               </a>
             </section>
-            <section class="col">
+            <section class="col-lg-4 col-md-6">
               <h3 style="color: white;"><u>Nooduitgang</u></h3>
               <a href="https://open.spotify.com/album/44Mi6qU33op01372GY9TD8?si=C_hXcEhPS26lsTuhGwYDoQ">
                 <img src="img/downloaden (5).jpg" alt="Nooduitgang">
