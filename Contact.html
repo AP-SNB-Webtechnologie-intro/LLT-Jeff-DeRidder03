@@ -82,6 +82,7 @@
 
       <hr style="color: white;">
       <p style="color: white;" class="text-center">Op deze pagina vind u de gegevens terug van de ontwerper/bedenkers van de site voor als u meer vragen hebt of feedback wilt achterlaten.</p>
+      
       <div class="container text-center pt-3 pb-3">
         <div class="row">
           <div class="col">
@@ -123,5 +124,33 @@
         <section id="map" class="row">
           <div class="p-5" id="apMap" style="height: 400px; margin-bottom: 40px;"></div>
         </section>
+
+        <form action="#" method="post" class="row g-3" style="color: white;  justify-content: center;">
+          <fieldset id="gegevens" class="row g-2">
+            <form action="#" method="post">
+              <fieldset class="row g-3 mb-3">
+                <legend class="text-uppercase fs-6 fw-bolder pt-3">Laar hier je Feedback achter! </legend>
+                <div class="col-md-6 mb-3">
+                  <label for="firstName" class="form-label">voornaam <span>*</span></label>
+                  <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="lastName" class="form-label">achternaam <span>*</span></label>
+                  <input type="text" class="form-control" id="lastName" required>
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="mail" class="form-label">e-mail <span>*</span></label>
+                  <input type="email" class="form-control" id="mail" required>
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">With textarea</span>
+                  <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+              </fieldset>
+          </fieldset>
+          <div class="col-12 pb-2 mb-3">
+            <button type="submit" class="btn btn-primary">verzenden</button>
+          </div>
+        </form>
     </body>  
 </html>
