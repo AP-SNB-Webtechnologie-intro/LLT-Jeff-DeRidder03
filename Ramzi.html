@@ -13,7 +13,8 @@
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
             <!-- JavaScript: Bootstrap Bundle with Popper -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-            <!-- eigen geschreven css voor jouw html-bestand -->
+            <!-- eigen geschreven javascript voor jouw html-bestand -->
+            <script src="js/spotifyramzi.js"></script>
 
                                  <!-- LEAFLET -->
           <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
@@ -120,43 +121,38 @@
               <tr>
               <th scope="col"></th>
               <th scope="col">Titel</th>
-              <th scope="col">Aantal streams</th>
-              <th scope="col">Duur</th>
+              <th scope="col">populariteit (0-100)</th>
               </tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td>Onbeschrijfelijk</td>
-              <td>1.750.000</td>
-              <td>4:12</td>
-            </tr> 
+              <td id="trackinfo"></td>
+              <td id="trackinfopopulair"></td>
+
+            </tr>
             <tr>
               <th scope="row">2</th>
-              <td>Afspraak</td>
-              <td>1.150.000</td>
-              <td>3:27</td>
-            </tr> 
+              <td id="trackinfo2"></td>
+              <td id="trackinfopopulair2"></td>
+            </tr>
             <tr>
               <th scope="row">3</th>
-              <td>Hoelang Nog</td>
-              <td>700.000</td>
-              <td>4:16</td>
-            </tr> 
+              <td id="trackinfo3"></td>
+              <td id="trackinfopopulair3"></td>
+            </tr>
             <tr>
               <th scope="row">4</th>
-              <td>Free Al Mijn G's</td>
-              <td>600.000</td>
-              <td>2:49</td>
+              <td id="trackinfo4"></td>
+              <td id="trackinfopopulair4"></td>
             </tr>
             <tr>
               <th scope="row">5</th>
-              <td>anvers Cité</td>
-              <td>500.000</td>
-              <td>2:32</td>
+              <td id="trackinfo5"></td>
+              <td id="trackinfopopulair5"></td>
             </tr>
           </tbody>
-      </table>
+        </table>
 
         <section class="container text-center pt-3 pb-3">
           <h2 style="color: white;"><u>nummers/albums</u></h2>
